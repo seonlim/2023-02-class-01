@@ -1,0 +1,155 @@
+/*@import url();*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --mainColor: #AB2FS2;
+}
+
+a {
+    text-decoration: none;
+}
+
+h6 {
+    height: 3px;
+    background-color: lightgray;
+    text-align: center;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+h6 > span {
+    width: 30%;
+    background-color: var(--mainColor);
+    height: 100%;
+}
+
+main h2 {
+    color: var(--mainColor);
+    font-weight: 200; /* decrease font-weight */
+    text-transform: uppercase;
+}
+
+body, /*태그셀렉터만 제너럴에*/
+main,
+footer,
+main > section,
+main > section > article,
+figcaption,
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-image: url("/img/pic-02.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+header > article {
+    width: 98%;
+    height: 98%;
+    padding: 1%;
+}
+
+img {
+    width: 40%;
+}
+
+/** MOBILE **/
+@media (min-width: 200px) {
+
+    main {
+        padding-bottom: 10vh;
+    }
+/*왜 위에 넣지않고 mobile안에 넣는지?*/
+    main > section > section {
+        display: flex;
+    }
+
+    /*class selector는 안에*/
+    .testimonials,
+    .services aside,
+    .contact ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 1%;
+        text-align: center;
+        background-color: black;
+        color: whitesmoke;
+        row-gap: 3vh;
+        align-items: center;
+    }
+
+    footer ul {
+        display: flex;
+        justify-content: center;
+        column-gap: 4vh;
+        list-style-type: none;
+    }
+
+    footer a {
+        color:whitesmoke;
+    }
+
+    /** CONTACT **/
+    .contact {
+        align-items: center;
+    } 
+
+    .contact > section {
+        flex-direction: column;
+        /* align-items: center; */
+        width: 90%;
+        row-gap: 5vh;
+    }
+
+    .contact ul {
+        row-gap: 3vh;
+        /* width: 100%; */
+    }
+
+    .contact li {
+        display: flex;
+        column-gap: 3vh;
+        align-items: flex-end;
+    }
+    /**캐릿트^ 쓰면 fa-로 시작하는 것이 묶임
+    $dollar sign쓰면 
+    *star: class contains fa- **/
+    .contact [class*="fa-"] {
+        color: var(--mainColor);
+        font-size: 18px;
+    }
+
+    .contact ul aside {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+    }
+
+    .contact a {
+        color: dimgray;
+    }
+
+    form {
+        width: 100%;
+    }
+    
+} 
+
