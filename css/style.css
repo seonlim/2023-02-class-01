@@ -74,7 +74,7 @@ img {
     main {
         padding-bottom: 10vh;
     }
-/*왜 위에 넣지않고 mobile안에 넣는지?*/
+    /*왜 위에 넣지않고 mobile안에 넣는지?*/
     main > section > section {
         display: flex;
     }
@@ -147,9 +147,54 @@ img {
         color: dimgray;
     }
 
-    form {
-        width: 100%;
+    .contact > article {
+        align-items: center;
+        row-gap: 3vh;
+        text-align: center;
     }
+
+    .contact p {
+        color: darkgray;
+    }
+
+    form {
+        align-items: center;
+        width: 90%;
+        row-gap: 3vh;
+    }
+
+    form > aside {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 3vh;
+    }
+
+    input {
+        padding: 4px;
+        width: 96%;
+        border: none;
+        border-bottom: 2px solid black;
+    }
+
+    textarea {
+        resize: none;
+        height: 20vh;
+        padding: 4px;
+        width: 96%;
+        border: none;
+        border-bottom: 2px solid black;
+    }
+   
+    [type="submit"] {
+        font-weight: 500;
+        padding: 2vh;
+        background-color: var(--mainColor);
+        width: 75%;
+        color: whitesmoke;
+        border: none;
+        border-radius: 25px;
+    }
+  
     
 } 
 
