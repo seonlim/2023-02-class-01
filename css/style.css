@@ -73,7 +73,9 @@ img {
 
     main {
         padding-bottom: 10vh;
+        row-gap: 5vh;
     }
+    
     /*왜 위에 넣지않고 mobile안에 넣는지?*/
     main > section > section {
         display: flex;
@@ -107,9 +109,45 @@ img {
         color:whitesmoke;
     }
 
+    /** TEESTIMONIALS **/
+    .testimonials {
+        background-image: url("/img/pic-04.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* article하나밖에없어서 필요없음
+        align-items: center; */
+        text-align: center;
+    }
+
+    .testimonials > article {
+        row-gap: 4vh;
+        padding: 10% 5%; /*위아래, 왼오*/
+        background-color: rgba(30,30,30,.8);
+    }
+
+    .testimonials i {
+        font-size: 28px;
+        color: var(--mainColor);
+    }
+    
+    .testimonials h5 {
+        color: orange;
+    }
+
+    .testimonials span {
+        color: whitesmoke;
+        font-weight: 700;
+    }
+
+    .testimonials p {
+        color: whitesmoke;
+    }
+
     /** CONTACT **/
     .contact {
         align-items: center;
+        row-gap: 5vh;
     } 
 
     .contact > section {
