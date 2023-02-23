@@ -73,6 +73,8 @@ img {
 
     main {
         padding-bottom: 10vh;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
         row-gap: 5vh;
     }
     
@@ -109,6 +111,52 @@ img {
         color:whitesmoke;
     }
     
+    /** ABOUT **/
+    .about {
+        width: 90%;
+        row-gap: 5vh;
+        padding-top: 10vh;
+    }
+
+    .about > article {
+        color: darkgray;
+        align-items: center;
+        text-align: center;
+        row-gap: 2vh;
+    }
+
+    .about > figure {
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 4vh;
+    }
+
+    .about small {
+        color: orange;
+        font-weight: 500;
+    }
+
+    .about figcaption {
+        row-gap: 3vh;
+        line-height: 1.5;
+    }
+
+    .about img {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .about a {
+        background-color: orange;
+        color: white;
+        padding: 2%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        column-gap: 1vh;
+        transition: .6s;
+    }
+
     /** SERVICES**/
     .services {
         /*아래 article에 width을 주면 
