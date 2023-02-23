@@ -108,6 +108,62 @@ img {
     footer a {
         color:whitesmoke;
     }
+    
+    /** SERVICES**/
+    .services {
+        /*아래 article에 width을 주면 
+        왼쪽부터 시작하게되기 때문에
+        align-items center를 줘야함
+        */
+        align-items: center;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        row-gap: 5vh;
+        background-color: gainsboro;
+    }
+
+    .services > article {
+        /*width을 주면 왼쪽부터 시작함 */
+        width: 90%;
+        text-align: center;
+        align-items: center;
+        row-gap: 3vh;
+    }
+
+    .services > section{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5vh;
+    }
+
+    .services aside {
+        align-items: center;
+        row-gap: 2vh;
+        min-height: 40vh;/*다른 element가 grow하면 */
+        width: 90%;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .services i {
+        font-size: 36px;
+        color: orange;
+    }
+
+    .services h4 {
+        font-size: 20px;
+    }
+
+    .services hr {
+        width: 30%;
+    }
+
+    .services p {
+        color: darkgray;
+        text-align: center;
+        line-height: 1.5;
+        width: 80%;
+    }
 
     /** GALLERY **/
     .gallery {
