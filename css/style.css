@@ -109,6 +109,27 @@ img {
         color:whitesmoke;
     }
 
+    /** GALLERY **/
+    .gallery {
+        row-gap: 5vh;
+    }
+
+    .gallery > article {
+        row-gap: 3vh;
+        text-align: center;
+        align-items: center;
+    }
+
+    .gallery figure {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 50vh;
+    }
+
     /** TEESTIMONIALS **/
     .testimonials {
         background-image: url("/img/pic-04.jpg");
