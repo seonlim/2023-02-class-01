@@ -70,7 +70,6 @@ img {
 
 /** MOBILE **/
 @media (min-width: 200px) {
-
     header {
         color: whitesmoke;
         height: 80vh;
@@ -394,4 +393,98 @@ img {
         border: none;
         border-radius: 25px;
     }
+}
+
+/** TABLET **/
+@media (min-width: 600px) {
+    
+    /** HEADER **/
+    header {
+        height: 50vh;
+    }
+
+    header h2 {
+        font-size: 30px;
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    header > article {
+        padding: 3% 5%;
+    }
+
+    /** CONTACT **/
+    .contact {
+        width: 90%;
+    }
+
+    .contact h2 {
+        font-size: 30px;
+    }
+
+    .contact h6 {
+        width: 40%;
+    }
+
+    .contact > section {
+        flex-direction: row;
+        width: 80%;
+        column-gap: 6vh;
+    }
+
+    [type="submit"] {
+        width: 70%;
+        border-radius: 30px;
+        padding: 2vh;
+        transition: .6s;
+        border: 2px solid var(--mainColor);
+    }
+
+    [type="submit"]:hover {
+        background-color: white;
+        color: var(--mainColor);
+        cursor: pointer;
+    }
+
+    /** ABOUT **/
+    .about > article {
+        width: 50%;
+    }
+
+    .about h3 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .about small {
+        font-size: 17px;
+    }
+
+    .about p {
+        width: 100%;
+        color: gray;
+    }
+
+    .about > section {
+        display: flex;
+    }
+
+    .about figure {
+        display: flex;
+        flex-direction: row-reverse;
+        column-gap: 3vh;
+    }
+
+    .about img {
+        float: right;
+        width: 60vw;
+        height: 20vh;
+    }
+
+
+
+    
+
 }
