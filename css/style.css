@@ -558,6 +558,46 @@ img {
 
 @media (min-width: 1000px) {
 
+    /** HEADER **/
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }    
+    /*그냥 h1쓰면 적용이 안되는 이유: override돼서. 다른 버전에서 h1 설정했음, stronger , prioritize
+    */
+    header h1 {
+        font-size: 50px;
+    }
+
+    nav h2 {
+        font-size: 28px;
+    }
+
+    header p {
+        width: 50%;
+        font-size: 24px;
+    }
+
+    nav > ul {
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+    nav a {
+        color: white;
+        transition: .6s;
+    }
+    
+    nav a:hover {
+        color: orange;
+    }
+
+    main {
+        row-gap: 10vh;
+    }
+
     /** ABOUT **/
     .about {
         align-items: center;
@@ -571,9 +611,6 @@ img {
         width: 50%;
     }
 
-    main {
-        row-gap: 10vh;
-    }
     /** SERVICES **/
     .services aside {
         width: 25%;
