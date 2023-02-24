@@ -397,6 +397,20 @@ img {
 
 /** TABLET **/
 @media (min-width: 600px) {
+
+    /** GALLERY **/
+    .gallery {
+        align-items: center;
+    }
+
+    .gallery img {
+        width: 50%;
+        height: 30vh;
+    }
+
+    .gallery > article {
+        width: 80%;
+    }
     
     /** HEADER **/
     header {
@@ -420,10 +434,16 @@ img {
         width: 90%;
     }
 
+    .about h2,
+    .services h2,
+    .gallery h2,
     .contact h2 {
         font-size: 30px;
     }
 
+    .about h6,
+    .services h6,
+    .gallery h6,
     .contact h6 {
         width: 40%;
     }
