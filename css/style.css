@@ -498,9 +498,6 @@ img {
     }
 
     /** TESTIMONIALS **/
-    .testimonials i {
-
-    }
     
     /** HEADER **/
     header {
@@ -558,6 +555,18 @@ img {
         cursor: pointer;
     }
 
+}
 
+@media (min-width: 1000px) {
+    /** CONTACT **/
+    .contact aside {
+        /*왜*/
+        width: 96%;
+        justify-content: space-between;
+    }
+
+    .contact aside input {
+        width: 40%;
+    }
 
 }
