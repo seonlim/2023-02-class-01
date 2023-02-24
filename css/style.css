@@ -562,9 +562,13 @@ img {
     main {
         row-gap: 10vh;
     }
+    /** SERVICES **/
+    .services aside {
+        width: 25%;
+    }
+
     /** GALLERY **/
 
-    
     .gallery img {
         width: 33.33%;
     }
