@@ -398,6 +398,23 @@ img {
 /** TABLET **/
 @media (min-width: 600px) {
 
+    /** SERVICES **/
+    .services {
+        row-gap: 5vh;
+    }
+
+    .services > section {
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 2vw;
+        justify-content: center;
+    }
+
+    .services aside {
+        width: 40%;
+        min-height: 25vh;
+    }
+
     /** GALLERY **/
     .gallery {
         align-items: center;
@@ -410,6 +427,11 @@ img {
 
     .gallery > article {
         width: 80%;
+    }
+
+    /** TESTIMONIALS **/
+    .testimonials i {
+
     }
     
     /** HEADER **/
@@ -502,7 +524,6 @@ img {
         width: 60vw;
         height: 20vh;
     }
-
 
 
     
