@@ -554,10 +554,22 @@ img {
         color: var(--mainColor);
         cursor: pointer;
     }
-
 }
 
 @media (min-width: 1000px) {
+
+    /** ABOUT **/
+    .about {
+        align-items: center;
+    }
+
+    .about a {
+        width: 15vw;
+    }
+
+    .about > article {
+        width: 50%;
+    }
 
     main {
         row-gap: 10vh;
