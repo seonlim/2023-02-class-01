@@ -558,6 +558,26 @@ img {
 }
 
 @media (min-width: 1000px) {
+
+    /** TESTIMONIALS **/
+    .testimonials {
+        width: 100%;
+    }
+
+    .testimonials > article {
+        row-gap: 10vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .testimonials p {
+        font-size: 24px;
+    }
+
+    .testimonials i {
+        font-size: 58px;
+    }
+
     /** CONTACT **/
     .contact aside {
         /*왜*/
@@ -568,5 +588,7 @@ img {
     .contact aside input {
         width: 40%;
     }
+
+
 
 }
