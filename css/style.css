@@ -559,13 +559,27 @@ img {
 
 @media (min-width: 1000px) {
 
+    main {
+        row-gap: 10vh;
+    }
+    /** GALLERY **/
+
+    
+    .gallery img {
+        width: 33.33%;
+    }
+
+    .gallery > article {
+        width: 50%;
+    }
+
     /** TESTIMONIALS **/
     .testimonials {
-        width: 100%;
+        width: 50%;
     }
 
     .testimonials > article {
-        row-gap: 10vh;
+        row-gap: 6vh;
         padding-top: 5vh;
         padding-bottom: 5vh;
     }
@@ -588,7 +602,6 @@ img {
     .contact aside input {
         width: 40%;
     }
-
 
 
 }
